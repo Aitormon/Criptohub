@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style ="background-color:rgb(0, 0, 0);">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Conversor</title>
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="conversor.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        
+    
+    <style>
+        /* Estilos para ocultar los inputs tipo radio */
+        input[type="radio"] {
+            display: none;
+        }
+        /* Estilos para las imágenes dentro de los labels */
+        label {
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        label img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Para hacer las imágenes circulares */
+            border: 2px solid transparent;
+        }
+        /* Estilos para resaltar la imagen seleccionada */
+        input[type="radio"]:checked + label img {
+            border-color: blue; /* Color de borde cuando está seleccionada */
+        }
+    </style>
+
+<img src="imagenes/logo.jpeg" width="1250" height="120" margin-bottom="0";>
+
+
+<div class="dropdown-container">
+    <div class="dropdown" style = "margin-left: 50px;">
+        <button id="portada" class="dropdown-btn">Portada</button>
+        <script>
+            // Código JavaScript para manejar el evento de clic en el botón
+            var boton = document.getElementById('portada');
+        
+            boton.addEventListener('click', function() {
+                // Lógica para abrir el enlace cuando se pulsa el botón
+                window.location.href = 'index.html';
+            });
+        </script>
+    </div>
+
+
+        <div class="dropdown" style = "margin-left: 50px;">
+            <button id="conversor" class="dropdown-btn">Crypto-Conversor</button>
+            <div class = "dropdown-content fuente">
+            <a href="conversor.html">Cripto a Fiat</a>
+              <a href="conversor2.html">Fiat a Cripto</a>
+            </div>
+        </div>
+
+
+    <div class="dropdown">
+        <button id="links" class="dropdown-btn">Links</button>
+        <script>
+
+            boton = document.getElementById('links');
+        
+            boton.addEventListener('click', function() {
+                window.location.href = 'links.html';
+            });
+        </script>
+    </div>
+
+
+</div>
+  
+
+
+
+</head>
+
+<body style ="background-image:url(/imagenes/fondo.jpg)";>
+
+<script>
+    function obtenerValor() {
+
+        const valor = document.getElementById('cantidad').value;
+
+        convertir(monedaSeleccionada,monedaFiatSeleccionada,valor);
+    }
+</script>
+
+<article id="contenedor">
+</article>
+
+
+<div >
+    <h2 class="margen fuente">Criptomonedas</h2>
+    <div >
+        <label class="criptoOptions" style="margin-left: 25px;">
+            <input type="radio" name="cripto" value="BTC" onclick="seleccionarCriptomoneda(this.value)">
+            <img src="/imagenes/bitcoin.jpeg" alt="Bitcoin">
+        </label>
+        
+        <label class="criptoOptions" style="margin-left: 15px;">
+            <input type="radio" name="cripto" value="ETH" onclick="seleccionarCriptomoneda(this.value)">
+            <img src="/imagenes/ethereum.png" alt="Ethereum">
+        </label>
+
+        <label class="criptoOptions" style="margin-left: 15px;">
+            <input type="radio" name="cripto" value="BNB" onclick="seleccionarCriptomoneda(this.value)">
+            <img src="/imagenes/binance.png" alt="Binance">
+        </label>
+
+        <label class="criptoOptions" style="margin-left: 10px;">
+            <input type="radio" name="cripto" value="LTC" onclick="seleccionarCriptomoneda(this.value)">
+            <img src="/imagenes/litecoin.jpeg" alt="Litecoin">
+        </label>
+
+        <label class="criptoOptions" style="margin-left: 14px;">
+            <input type="radio" name="cripto" value="DOGE" onclick="seleccionarCriptomoneda(this.value)">
+            <img src="/imagenes/dogecoin.jpeg" alt="Dogecoin">
+        </label>
+
+    </div>
+    
+
+</div> 
+
+<label class="margen">BITCOIN</label>
+<label class="margen">ETHEREUM</label>
+<label class="margen">BINANCE</label>
+<label class="margen">LITECOIN</label>
+<label class="margen">DOGECOIN</label>
+
+
+<div>
+    <h2 class="margen fuente">Monedas Fiat</h2>
+    <div id="fiatOptions">
+        <label class="criptoOptions margen">
+            <input type="radio" name="fiat" value="USD" onclick="seleccionarFiat(this.value)">
+            <img src="/imagenes/dolar.PNG" alt="USD">
+        </label>
+
+        <label class="criptoOptions">
+            <input type="radio" name="fiat" value="EUR" onclick="seleccionarFiat(this.value)">
+            <img src="/imagenes/euro.png" alt="EUR">
+        </label>
+
+        <label class="criptoOptions">
+            <input type="radio" name="fiat" value="GBP" onclick="seleccionarFiat(this.value)">
+            <img src="/imagenes/libra.png" alt="GBP">
+        </label>
+
+        <label class="criptoOptions">
+            <input type="radio" name="fiat" value="JPY" onclick="seleccionarFiat(this.value)">
+            <img src="/imagenes/yen.png" alt="JPY">
+        </label>
+
+        <label class="criptoOptions">
+            <input type="radio" name="fiat" value="RUB" onclick="seleccionarFiat(this.value)">
+            <img src="/imagenes/rublo.png" alt="RUB">
+        </label>
+
+    </div>
+</div>
+
+<label class="margen" >DOLAR</label>
+<label class="margen" style="margin-left: 33px;">EURO</label>
+<label class="margen" style="margin-left: 36px;">LIBRA</label>
+<label class="margen" style="margin-left: 44px;">YEN</label>
+<label class="margen" style="margin-left: 44px;">RUBLO</label>
+
+<h2 class="margen" >Introduzca la cantidad:</h2>
+<input class="margen" type="text" id="cantidad" value=1>
+
+<button class="Btn" onclick="obtenerValor()">CONVERTIR</button>
+
+<script>
+
+    let monedaSeleccionada = 'BTC';
+    let monedaFiatSeleccionada = 'USD';
+
+    
+
+    function seleccionarCriptomoneda(moneda) {
+        monedaSeleccionada = moneda;
+        muestratexto(monedaSeleccionada, monedaFiatSeleccionada);
+        console.log("Criptomoneda seleccionada: " + monedaSeleccionada);
+    }
+
+    function seleccionarFiat(monedaFiat) {
+        monedaFiatSeleccionada = monedaFiat;
+        muestratexto(monedaSeleccionada, monedaFiatSeleccionada);
+        console.log("Moneda Fiat seleccionada: " + monedaFiatSeleccionada);
+    }
+</script>
+
+ 
+
+
+
+
+
+
+
+
+
+<script src="conversor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+.dropdown-container {
+    display:flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #fffb00;
+}
+
+
+.dropdown-btn {
+    background-color: #fffb00;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    font-size: 20px;
+    font-style: bold ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+button:hover{
+    color:white;
+    background-color: #000000;
+}
+
+.dropdown-btn:hover + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+.moneda-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}

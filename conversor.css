@@ -1,0 +1,81 @@
+
+
+.criptoOptions{
+    margin-right: 40px;
+
+}
+
+.margen{
+    margin-left: 20px;
+
+}
+
+
+.criptoOptions:hover {
+    background-color: blue;
+  }
+
+  body {
+    color:white;
+    background-image: url('/imagenes/fondo.jpg');
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Establece la altura al 100% del viewport height */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.fuente{
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size:30px;
+
+  font-style: bold;
+}
+
+.Btn {
+    width: 100px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#926ffc,#77530a,#77530a,#815bff,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    /* position: relative;
+    display: flex; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn::before {
+     position:initial;
+    /* content: "SUBSCRIBE"; */
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }

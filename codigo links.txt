@@ -1,0 +1,38 @@
+    <h1>Links de Interés</h1>
+    <p>Aquí encontrarás enlaces a las principales webs de transacciones y wallets:</p>
+    <ul>
+        <li>
+            <a href="https://www.binance.com/" target="_blank">
+                <img src="ruta_a_tu_imagen_binance.png" alt="Binance" width="100" height="100">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.coinbase.com/" target="_blank">
+                <img src="ruta_a_tu_imagen_coinbase.png" alt="Coinbase" width="100" height="100">
+            </a>
+        </li>
+        <!-- Agrega más enlaces aquí -->
+    </ul>
+</body>
+
+Electrum: Uno de los mejores monederos para Bitcoin. Es seguro y fácil de usar1.
+Exodus: Buena opción para Bitcoin y altcoins1.
+Guarda: Funciona en sistemas operativos Windows, Linux y MacOS1.
+Jax Liberty: Otra alternativa para gestionar tus criptomonedas1.
+Mycelium: Monedero popular con una interfaz amigable1.
+Bitcoin Core: Ideal para usuarios avanzados1.
+Atomic Wallet: Admite múltiples criptomonedas1.
+Bitpay: Enfocado en Bitcoin y Bitcoin Cash1.
+Trezor Suite: Monedero hardware con alta seguridad1.
+Ledger Live: Otra opción de mon
+
+Electrum: Uno de los mejores monederos para Bitcoin. Es seguro y fácil de usar1.
+Exodus: Buena opción para Bitcoin y altcoins1.
+Guarda: Funciona en sistemas operativos Windows, Linux y MacOS1.
+Jax Liberty: Otra alternativa para gestionar tus criptomonedas1.
+Mycelium: Monedero popular con una interfaz amigable1.
+Bitcoin Core: Ideal para usuarios avanzados1.
+Atomic Wallet: Admite múltiples criptomonedas1.
+Bitpay: Enfocado en Bitcoin y Bitcoin Cash1.
+Trezor Suite: Monedero hardware con alta seguridad1.
+Ledger Live: Otra opción de mon

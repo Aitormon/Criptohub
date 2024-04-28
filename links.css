@@ -1,0 +1,36 @@
+.margen{
+    margin-left: 20px;
+
+}
+
+.horizontal-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    display: flex; /* Utiliza flexbox para mostrar los elementos en línea */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme a lo largo del contenedor */
+}
+
+.horizontal-list li {
+    display: inline-block; /* Muestra los elementos como bloques en línea */
+    text-align: center; /* Centra el contenido dentro de cada elemento li */
+}
+
+body {
+    color:white;
+    background-image: url('/imagenes/fondo.jpg');
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Establece la altura al 100% del viewport height */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.fuente{
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size:30px;
+
+  font-style: bold;
+}
+
+

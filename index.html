@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style ="background-color:rgb(0, 0, 0);">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoHub</title>
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="portada.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        
+
+<img src="imagenes/logo.jpeg" width="1250" height="120" margin-bottom="0";>
+
+
+<div class="dropdown-container fuente">
+    <div class="dropdown" style = "margin-left: 50px;">
+        <button id="portada" class="dropdown-btn">Portada</button>
+        <script>
+            // Código JavaScript para manejar el evento de clic en el botón
+            var boton = document.getElementById('portada');
+        
+            boton.addEventListener('click', function() {
+                // Lógica para abrir el enlace cuando se pulsa el botón
+                window.location.href = 'index.html';
+            });
+        </script>
+    </div>
+
+
+    <div class="dropdown" style = "margin-left: 50px;">
+        <button id="conversor" class="dropdown-btn">Crypto-Conversor</button>
+        <div class = "dropdown-content">
+        <a href="conversor.html">Cripto a Fiat</a>
+          <a href="conversor2.html">Fiat a Cripto</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button id="links" class="dropdown-btn">Links</button>
+        <script>
+            // Código JavaScript para manejar el evento de clic en el botón
+            boton = document.getElementById('links');
+        
+            boton.addEventListener('click', function() {
+                // Lógica para abrir el enlace cuando se pulsa el botón
+                window.location.href = 'links.html';
+            });
+        </script>
+    </div>
+
+
+</div>
+  
+
+
+
+</head>
+
+<body style ="background-image:url(/imagenes/fondo.jpg)";>
+
+<article id="contenedor">
+
+
+
+
+
+
+
+
+</article>    
+
+<script src="api.js"></script>
+
+</body>
+</html>
