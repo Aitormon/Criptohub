@@ -35,7 +35,7 @@ Realiza tus cambios y haz commit de ellos (git commit -am 'Añade nueva funciona
 Sube tus cambios a tu fork (git push origin feature/nueva-funcionalidad).
 Abre un pull request para que podamos revisar tus cambios.
 Créditos
-Este proyecto fue creado por Tu Nombre.
+Este proyecto fue creado por Aitor Montalbán.
 
 Licencia
 Este proyecto está bajo la Licencia MIT.
