@@ -1,2 +1,5 @@
 # Criptohub
-Tu web de blochain y criptomonedas
+Tu web de blockchain y criptomonedas
+
+
+
