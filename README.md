@@ -3,11 +3,14 @@ Tu web de blockchain y criptomonedas
 
 Este repositorio contiene una página web dedicada al mundo de las criptomonedas. La página ofrece diversas funcionalidades relacionadas con criptomonedas, incluyendo noticias actualizadas, un conversor de criptomonedas a moneda fiat y viceversa, así como enlaces de interés para obtener más información sobre criptomonedas y plataformas de intercambio.
 
-Funcionalidades
+Funcionalidades:
+
 Noticias de Criptomonedas:
 La página muestra noticias recientes y relevantes sobre criptomonedas, proporcionando información actualizada sobre el mercado y las tendencias.
+
 Conversor de Criptomonedas:
 Permite convertir entre diferentes criptomonedas y monedas fiduciarias (fiat), facilitando el intercambio y la visualización de valores en tiempo real.
+
 Enlaces de Interés:
 Se incluyen enlaces útiles relacionados con criptomonedas, como plataformas de intercambio populares, recursos educativos y noticias destacadas.
 Tecnologías Utilizadas:
