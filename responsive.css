@@ -1,0 +1,32 @@
+
+
+/* Estilos específicos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    /* Modifica el diseño para adaptarse a pantallas más pequeñas */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    /* Otros estilos específicos para dispositivos móviles */
+}
+
+/* Estilos específicos para pantallas más grandes (por ejemplo, tabletas y computadoras de escritorio) */
+@media (min-width: 768px) {
+    /* Modifica el diseño para pantallas más grandes */
+    .container {
+        width: 80%;
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    /* Otros estilos específicos para tabletas y computadoras de escritorio */
+}
+.container {
+    width: 80%; /* Ejemplo de uso de porcentaje para el ancho */
+    max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+}
+
+.img-responsive {
+    max-width: 100%; /* Ajusta automáticamente el tamaño máximo de la imagen según el contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}

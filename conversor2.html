@@ -6,11 +6,11 @@
     <title>Crypto Conversor</title>
     <link rel="stylesheet" href="encabezado.css">
     <link rel="stylesheet" href="conversor.css">
-
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
         /* Estilos para ocultar los inputs tipo radio */
@@ -47,6 +47,7 @@
         
             boton.addEventListener('click', function() {
                 // Lógica para abrir el enlace cuando se pulsa el botón
+                guardarCantidad();
                 window.location.href = 'index.html';
             });
         </script>
@@ -69,6 +70,7 @@
             boton = document.getElementById('links');
         
             boton.addEventListener('click', function() {
+                guardarCantidad();
                 window.location.href = 'links.html';
             });
         </script>
@@ -86,14 +88,14 @@
     
 <script>
     function obtenerValor() {
-
+        guardarCantidad();
         const valor = document.getElementById('cantidad').value;
-
+        
         convertir(monedaSeleccionada,monedaFiatSeleccionada,valor);
     }
 </script>
 
-<article id="contenedor">
+<article id="contenedor" class="container">
 </article>
 
 <div>
@@ -175,6 +177,8 @@
 <h2 class="margen" >Introduzca la cantidad:</h2>
 <input class="margen" type="text" id="cantidad" value=1>
 
+
+
 <button class="Btn" onclick="obtenerValor()">CONVERTIR</button>
 
 <script>
@@ -182,12 +186,12 @@
     let monedaSeleccionada = 'BTC';
     let monedaFiatSeleccionada = 'USD';
 
-    
+    guardarCantidad();
 
     function seleccionarCriptomoneda(moneda) {
         monedaSeleccionada = moneda;
         muestratexto(monedaSeleccionada, monedaFiatSeleccionada);
-        console.log("Criptomoneda seleccionada: " + monedaSeleccionada);
+        guardarCantidad();
     }
 
     function seleccionarFiat(monedaFiat) {
@@ -198,7 +202,35 @@
 </script>
 
  
+<script>
+    // Función para guardar la cantidad en localStorage
+    function guardarCantidad() {
+        // Obtener el valor introducido por el usuario desde el input
+        var cantidad = document.getElementById('cantidad').value;
 
+        // Verificar si se introdujo un valor válido (no vacío)
+        if (cantidad.trim() !== '') {
+            // Guardar la cantidad en localStorage, asociándola con la clave 'cantidad'
+            localStorage.setItem('cantidad', cantidad);
+
+        } else {
+            // Mostrar un mensaje de error si no se introdujo ninguna cantidad
+            alert('Por favor, introduce una cantidad válida.');
+        }
+    }
+
+// Función para recuperar la cantidad almacenada en localStorage al cargar la página
+window.onload = function() {
+            // Obtener la cantidad almacenada en localStorage con la clave 'cantidad'
+            var cantidadGuardada = localStorage.getItem('cantidad');
+
+            // Verificar si se recuperó una cantidad válida
+            if (cantidadGuardada !== null) {
+                // Establecer el valor del input con la cantidad recuperada
+                document.getElementById('cantidad').value = cantidadGuardada;
+            }
+        };
+    </script>
 
 
 
