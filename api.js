@@ -16,10 +16,6 @@ async function Noticias(){
         const res = await response.json();
         let noticias = res.Data;
         
-        //console.log(data);
-        
-
-       
     }
     catch (error) {
         console.error(error);
@@ -46,7 +42,7 @@ async function muestranoticias(){
         console.error(error);
     }
 
-    console.log(noticias);
+    
     
     const noticiasDiv = document.getElementById("contenedor");
 
@@ -58,7 +54,8 @@ async function muestranoticias(){
 
     let titulo = document.createElement("h1");
 
-    titulo.innerText="NOTICIAS";
+    titulo.innerText="N O T I C I A S";
+    titulo.classList.add("fuente");
     Listanoticias.appendChild(titulo);
 
     
@@ -75,6 +72,10 @@ async function muestranoticias(){
        titulo = document.createElement("h3");
        titulo.innerText=noticia.body;
        Listanoticias.appendChild(titulo);
+
+       titulo = document.createElement("h3");
+       titulo.innerText="Link:";
+       Listanoticias.appendChild(titulo);
    
        titulo = document.createElement("a");
        titulo.style.color="white";
@@ -83,6 +84,7 @@ async function muestranoticias(){
 
       
        titulo.textContent = noticia.url ;
+       titulo.classList.add("fuente2");
        Listanoticias.appendChild(titulo);
     
        

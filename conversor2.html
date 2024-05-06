@@ -40,7 +40,7 @@
 
 <div class="dropdown-container">
     <div class="dropdown" style = "margin-left: 50px;">
-        <button id="portada" class="dropdown-btn">Portada</button>
+        <button id="portada" class="dropdown-btn fuente">Portada</button>
         <script>
             // Código JavaScript para manejar el evento de clic en el botón
             var boton = document.getElementById('portada');
@@ -55,7 +55,7 @@
 
 
         <div class="dropdown" style = "margin-left: 50px;">
-            <button id="conversor" class="dropdown-btn">Crypto-Conversor</button>
+            <button id="conversor" class="dropdown-btn fuente">Crypto-Conversor</button>
             <div class = "dropdown-content fuente">
             <a href="conversor.html">Cripto a Fiat</a>
               <a href="conversor2.html">Fiat a Cripto</a>
@@ -64,7 +64,7 @@
 
 
     <div class="dropdown">
-        <button id="links" class="dropdown-btn">Links</button>
+        <button id="links" class="dropdown-btn fuente">Links</button>
         <script>
 
             boton = document.getElementById('links');
@@ -94,9 +94,6 @@
         convertir(monedaSeleccionada,monedaFiatSeleccionada,valor);
     }
 </script>
-
-<article id="contenedor" class="container">
-</article>
 
 <div>
     <h2 class="margen fuente">Monedas Fiat</h2>
@@ -174,12 +171,18 @@
 <label class="margen">LITECOIN</label>
 <label class="margen">DOGECOIN</label>
 
-<h2 class="margen" >Introduzca la cantidad:</h2>
-<input class="margen" type="text" id="cantidad" value=1>
+<article id="contenedor" class="fuente">
+</article>
 
+<h2 class="margen fuente" >Introduzca la cantidad:</h2>
 
-
-<button class="Btn" onclick="obtenerValor()">CONVERTIR</button>
+<div class="margen coolinput">
+    <label for="input" class="text">CANTIDAD:</label>
+    <div class="input-wrapper">
+        <input type="text" placeholder="Cantidad" name="input" class="input" id="cantidad" value="1">
+        <button class="Btn" onclick="obtenerValor()">CONVERTIR</button>
+    </div>
+</div>
 
 <script>
 
@@ -197,7 +200,7 @@
     function seleccionarFiat(monedaFiat) {
         monedaFiatSeleccionada = monedaFiat;
         muestratexto(monedaSeleccionada, monedaFiatSeleccionada);
-        console.log("Moneda Fiat seleccionada: " + monedaFiatSeleccionada);
+        
     }
 </script>
 
@@ -236,7 +239,7 @@ window.onload = function() {
 
 
 
-
+<br>
 
 
 <script src="conversor2.js"></script>

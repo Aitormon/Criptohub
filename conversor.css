@@ -15,12 +15,13 @@
     background-color: blue;
   }
 
-  body {
+body {
     color:white;
     background-image: url('/imagenes/fondo.jpg');
     background-size: cover; /* Cubre todo el fondo */
+    background-repeat: no-repeat;
     background-position: center; /* Centra la imagen */
-    height: 100vh; /* Establece la altura al 100% del viewport height */
+   /*  height: 100vh; */ /* Establece la altura al 100% del viewport height */
     margin: 0; /* Elimina el margen predeterminado */
     padding: 0; /* Elimina el relleno predeterminado */
 }
@@ -34,31 +35,31 @@
 }
 
 .Btn {
-    width: 100px;
-    height: 20px;
+    width: 180px;
+    height: 30px;
     border: none;
     border-radius: 10px;
     background: linear-gradient(to right,#77530a,#926ffc,#77530a,#77530a,#815bff,#77530a);
     background-size: 250%;
-    background-position: left;
+   /*  background-position: left; */
     color: #ffd277;
     /* position: relative;
     display: flex; */
-    align-items: center;
-    justify-content: center;
+/*     align-items: center;
+    justify-content: center; */
     cursor: pointer;
     transition-duration: 1s;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .Btn::before {
      position:initial;
-    /* content: "SUBSCRIBE"; */
+  
     color: #ffd277;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 97%;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* width: 97%; */
     height: 90%;
     border-radius: 8px;
     transition-duration: 1s;
@@ -79,3 +80,45 @@
   .Btn:active {
     transform: scale(0.95);
   }
+
+  .coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+  }
+  
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: #818CF8;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 5px;
+    padding: 0 3px;
+    background: #e8e8e8;
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #e8e8e8;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+
+  .input {
+     flex: 1;  /* Ocupa todo el espacio disponible */
+     margin-right: 10px;  /* Espacio entre el input y el botón */
+}
+
+.input-wrapper {
+   display: flex; 
+   align-items: center; 
+}

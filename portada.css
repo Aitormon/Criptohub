@@ -1,9 +1,11 @@
 body {
     color:white;
-    background-image: url('/imagenes/fondo.jpg');
+    background-image: url('/imagenes/fondo2.jpg');
+    
     background-size: cover; /* Cubre todo el fondo */
+    background-repeat: no-repeat;
     background-position: center; /* Centra la imagen */
-    height: 100vh; /* Establece la altura al 100% del viewport height */
+   /*  height: 100vh; */ /* Establece la altura al 100% del viewport height */
     margin: 0; /* Elimina el margen predeterminado */
     padding: 0; /* Elimina el relleno predeterminado */
 }
@@ -14,4 +16,12 @@ body {
     font-size:30px;
 
   font-style: bold;
+}
+
+.fuente2{
+
+  font-family: "Bebas Neue", sans-serif;
+  font-size:18px;
+
+font-style:italic;
 }
